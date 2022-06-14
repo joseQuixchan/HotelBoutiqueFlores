@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>prueba</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+</head>
+
+
+
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+
+        <div class="sticky_logo">
+            <img src="img/logoColor.png" alt="#">
+         </div>
+
+        <div class="logo">
+            <img src="img/logoWhite.png" alt="#">
+        </div>
+
+
+        <ul class="nav-menu">
+          <li> <a href="#home">Inicio</a> </li>
+          <li> <a href="#about">Sobre Nosotros</a> </li>
+          <li> <a href="#room">Habitaciones</a> </li>
+          <li> <a href="#testimonials">Reseñas</a> </li>
+          <li> <a href="#gallary">Fotos</a> </li>
+          <li> <a href="#contact">contacto</a> </li>
+        </ul>
+        
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+  
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobliemmenu);
+
+    function mobliemmenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0)
+    })
+    
+  </script>
+
+
+  <section class="home" id="home">
+    <div class="container">
+      <h1>Visita Petén</h1>
+      <p>Descubre la maravilla de Petén & hospedate con nosotros</p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="heading">
+        <h5>Bienvenido</h5>
+        <h2>Hotel Villa Libertad</h2>
+      </div>
+
+      <div class="content flex  top">
+        <div class="left">
+          <h3>La calidez de un hogar en nuestras instalaciones</h3>
+          <p>Hotel Villa Libertad fue fundado para proporcionar a nuestros huéspedes una tarifa justa y accesible, además de ser altamente confortable para que lo puedan disfrutar.
+            Somos uno de los hoteles más populares para los huéspedes de nuestra ciudad. El hotel se encuentra en el area central de la ciudad y 5 minutos de la isla de flores, Hotel Villa Libertad está ubicado en una zona segura cerca de lugares de interes. además, contamos con estacionamiento amplio y privado sin costo, para su comodidad.</p>
+          <p>Nuestra ubicación está muy próxima a los centros de industria, comercio, turismo y recreación más importantes del norte del pais, permitiéndote descansar y planificar las mejores rutas para tus actividades.</p>
+          <a href="https://wa.me/+50279262437?text=Me%20interesa%20reservar%20una%20habitación">
+            <button class="flex1">
+              <span>Ver disponibilidad</span>
+              <i class="fas fa-arrow-circle-right"></i>
+            </button>
+          </a>
+        </div>
+        <div class="right">
+          <img src="image/hotel1.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="wrapper2">
+    <div class="container">
+      <div class="heading mtop">
+        <h5>COMODIDADES</h5>
+        <h2>Dando una estadia asombrosa </h2>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <i class="fa fa-solid fa-hotel"></i>
+          <h3>Ubicación</h3>
+          <p>El hotel se encuentra en el área central y cerca de lugares turisticos</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-mug-hot"></i>
+          <h3>Comodidad</h3>
+          <p>Nos esforzamos para darte el mejor servicio con comodidad y los mejores precios </p>
+        </div>
+        <div class="box">
+          <i class="fas fa-car"></i>
+          <h3>Parqueo</h3>
+          <p>Las instalaciones cuenta con parqueo privado</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--------------------------------Habitaciones------------------------------------->
+  <section class="offer mtop" id="room">
+    <div class="container">
+      <div class="heading">
+        <h5>Habitaciones </h5>
+        <h3>Con todos los estándares de limpieza y desinfección le ofrecemos</h3>
+      </div>
+
+      <div class="content grid2 mtop">
+        <div class="box flex">
+          <div class="left">
+            <img src="image/o11.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Sencilla</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Habitación muy cómoda y espaciosa donde disfrutarás de un ambiente relajado.
+               Cuenta con una cama tamaño Queen, aire acondicionado y calefacción, T.V. con señal de cable, mesa de trabajo, internet, baño privado con regadera.</p>
+               <a href="https://wa.me/+50279262437?text=Me%20interesa%20reservar%20una%20habitación">
+                  <button class="flex1">
+                    <span>Ver disponibilidad</span>
+                    <i class="fas fa-arrow-circle-right"></i>
+                  </button>
+               </a>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/o22.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Dobles</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Cómodas habitaciones con todo lo necesario para que tu estadía sea totalmente placentera.
+              Nuestras habitaciones cuentan con dos camas matrimoniales, aire acondicionado y calefacción, T.V. con señal de cable, mesa de trabajo, internet, baño privado con regadera.</p>
+              <a href="https://wa.me/+50279262437?text=Me%20interesa%20reservar%20una%20habitación">
+                <button class="flex1">
+                  <span>Ver disponibilidad</span>
+                  <i class="fas fa-arrow-circle-right"></i>
+                </button>
+             </a>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/o33.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>triples</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Amplias y cómodas habitaciones en donde podrás relajarte en una fresca cama, cuenta con 3 camas individuales, aire acondicionado y calefacción, T.V. con señal de cable, mesa de trabajo, internet, baño privado con regadera.</p>
+            <a href="https://wa.me/+50279262437?text=Me%20interesa%20reservar%20una%20habitación">
+              <button class="flex1">
+                <span>Ver disponibilidad</span>
+                <i class="fas fa-arrow-circle-right"></i>
+              </button>
+           </a>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="image/o44.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Accesibles</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Prácticas habitaciones adaptadas para huéspedes que necesiten opciones de accesibilidad que les brinden todas las facilidades para que su estadía sea cómoda y funcional.</p>
+            <a href="https://wa.me/+50279262437?text=Me%20interesa%20reservar%20una%20habitación">
+              <button class="flex1">
+                <span>Ver disponibilidad</span>
+                <i class="fas fa-arrow-circle-right"></i>
+              </button>
+           </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------------------------------Habitaciones------------------------------------->
+  
+  <!------------------------------SERVICIO---------------------------------------->
+  <section class="area top">
+    <div class="container">
+      <div class="heading">
+        <h5>SERVICIO</h5>
+        <h3>NUESTRA POLÍTICA DE CALIDAD</h3>
+      </div>
+
+      <div class="content flex mtop">
+        <div class="left">
+          <img src="image/HotelFrente.jpg" alt="">
+        </div>
+        <div class="right">
+          <p>Nuestro compromiso contigo es ser tu <b>Hotel en Petén</b>, al satisfacer plenamente tus requerimientos y superar tus expectativas en un ambiente agradable y seguro.
+            Para ello impulsamos una cultura de calidad basada en los principios de honestidad, liderazgo y desarrollo del recurso humano con el compromiso de mejorar continuamente todos los procesos del hotel, adaptándonos a la nueva normalidad.</p>
+          <p>Queremos ser tu hotel en Petén, y que nos reconozcas por el excelente servicio que te brindamos con amabilidad. Garantizándote que en cada visita recibirás un excelente servicio, haciendo de tu estancia una experiencia confortable.</p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+<!------------------------------SERVICIO---------------------------------------->
+
+
+<!------------------------------COMENTARIOS---------------------------------------->
+  <section class="customer top" id="testimonials">
+
+    <div class="container">
+      <div class="heading">
+        <h5>Reseñas</h5>
+        <h3>Lo que nuestros clientes dicen</h3>
+      </div>
+    </div>
+    
+      <div class="grid3 mtop">
+
+        <div class="comentario">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Excelente Ubicación</h3>
+          <p>Lo recomiendo, muy limpio, muy seguro y el personal muy amable</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/c11.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Elizabeth Portillo</h3>
+              <span>Cliente</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="comentario">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Muy buen servicio y atención</h3>
+          <p>Que recuerdos tengo bien atendidos mucha amabilidad.</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/c22.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Ana Silva</h3>
+              <span>Cliente</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="comentario">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Mucha comodidad</h3>
+          <p>SUPER RECOMENDADO, LIMPIO, CÉNTRICO Y AMPLIO PARQUEO!!</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="image/c33.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Lidia Calderón</h3>
+              <span>Cliente</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+<!------------------------------COMENTARIOS---------------------------------------->
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+<!------------------------------GALLERIA---------------------------------------->
+  <section class="gallary top" id="gallary">
+
+    <div class="container">
+      <div class="heading">
+        <h5>Galeria</h5>
+        <h3>Descubre mas de nosotros</h3>
+      </div>
+    </div>
+
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="image/Galeria/a1.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/Galeria/a2.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/Galeria/a3.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/Galeria/a4.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/Galeria/a5.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/Galeria/a6.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/Galeria/a7.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/Galeria/a8.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/Galeria/a9.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="image/Galeria/a10.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+
+  </section>
+<!------------------------------GALLERIA---------------------------------------->
+
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 4000,
+      autoplaySpeed: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+<!------------------------------MAPA---------------------------------------->
+  <section class="map top">
+    <div class="container">
+      <div class="heading">
+        <h5>COMO ENCONTRARNOS</h5>
+        <h3></h3>
+      </div>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d954.2774581573531!2d-89.89844351187851!3d16.91987358232096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5f8d92b86ea9b7%3A0xd4e1354ec541990f!2sHotel%20villa%20libertad!5e0!3m2!1ses!2sgt!4v1654402804461!5m2!1ses!2sgt" width="100" height="300"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+<!------------------------------MAPA---------------------------------------->
+
+
+  <div class="subscribe" id="contact">
+    <button class="flex1">
+      <span>¡Haz tu reservación hoy mismo!</span>
+      <i class="fas fa-arrow-circle-right"></i>
+    </button>
+  </div>
+
+<!------------------------------footer---------------------------------------->
+  <footer>
+    <div class="container">
+      
+      <div class="content grid">
+        <div class="box">
+          <p>Somos un comodo hotel en Petén, nos esforzamos para crear un ambiente de tranquilidad y paisaje ubicado en el centro de la ciudad.
+
+            Nuestra ubicación está muy próxima a los centros de industria, comercio, turismo y recreación más importantes del norte del pais, permitiéndote descansar y planificar las mejores rutas para tus actividades.
+        
+            Contamos con habitaciones simples, dobles, triples, familiares y economicas ideal para estudiantes.</p>
+            <div class="social">
+              <div class="flex3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="45" height="45" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+                <a href="https://www.facebook.com/VillaLibertadPeten">/VillaLibertadPeten</a>
+              </div>
+              <div class="flex3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="45" height="45" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                  <rect x="4" y="4" width="16" height="16" rx="4" />
+                  <circle cx="12" cy="12" r="3" />
+                  <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                </svg>
+                <a href="https://www.instagram.com">HotelVillaLibertadPeten</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>Servicios</h2>
+          <ul>
+            <li><i class="fas fa-angle-double-right"></i>Parqueo</li>
+            <li><i class="fas fa-angle-double-right"></i>Baño privado</li>
+            <li><i class="fas fa-angle-double-right"></i>T.V con cable</li>
+            <li><i class="fas fa-angle-double-right"></i>Aire acondicionado</li>
+            <li><i class="fas fa-angle-double-right"></i>Wi-fi</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Servicios</h2>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="text">
+              <h3>Dirección</h3>
+              <p>Calle Nueva Jerusalén, Santa Elena, Flores, Petén</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="text">
+              <h3>Teléfono</h3>
+              <p>+502 7926-2437</p>
+            </div>
+          </div>
+          <div class="icon flex">
+            <div class="i">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div class="text">
+              <h3>Email</h3>
+              <p>hotelvillalibertad@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <section class="resp">
+    <div class="logosfooter">
+      <p>© 2022 Hotel Villa Libertad <a>by Mayan Estudios</a></p>
+      <img src="/image/logofooter.png">
+    </div>
+  </section>
+</body>
+
+
+</html>
