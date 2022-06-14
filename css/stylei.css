@@ -40,7 +40,6 @@ a {
 }
 /*-------------header--------- */
 header {
-  padding: 15px 0 15px 0;
   color: white;
   background-image: url("../img/header.jpg");
   background-size: cover;
@@ -48,17 +47,15 @@ header {
   height: 100vh;
 }
 
+
 .navbar {
+  width: 100%;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
   transition: all 0.5s ease;
-}
-
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 25px;
 }
 
 .hamburger {
@@ -80,10 +77,6 @@ header {
   align-items: center;
 }
 
-header ul {
-  padding: 0 20px 0 0;
-}
-
 header li {
   margin-right: 30px;
 }
@@ -100,11 +93,11 @@ header ul li a:hover {
   color: #000;
 }
 
-header.sticky .logo img {
+.navbar.sticky .logo img {
   display: none;
 }
 
-header .sticky_logo {
+.navbar .sticky_logo{
   display: none;
 }
 
@@ -112,22 +105,14 @@ header img {
   height: 10vh;
 }
 
-header.sticky .sticky_logo {
-  display: block;
-  min-width: 200px;
-  height: auto;
-  margin-top: -10px;
-}
-
 .navbar.sticky {
   background: white;
-  padding: 30px 0 0 0;
 }
 
-header.sticky ul li a {
+.navbar.sticky ul li a {
   color: #000;
 }
 
-header.sticky ul li a:hover {
+.navbar.sticky ul li a:hover {
   color: rgb(141, 109, 94);
 }
