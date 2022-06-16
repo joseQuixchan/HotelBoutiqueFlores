@@ -36,12 +36,12 @@ a {
 }
 
 .scrol {
-    height: 200px;
+    height: 1200px;
 }
 /*-------------header--------- */
 header {
   color: white;
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/port2.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -55,7 +55,7 @@ header {
   align-items: center;
   justify-content: space-between;
   transition: all 0.5s ease;
-  padding: 25px;
+  padding: 10px;
 }
 
 .hamburger {
@@ -93,7 +93,15 @@ header ul li a:hover {
   color: #000;
 }
 
-.navbar.sticky .logo img {
+header img {
+  height: 11vh;
+}
+
+.navbar .logo {
+  margin-left: 90px;
+}
+
+.navbar.sticky .logo {
   display: none;
 }
 
@@ -101,12 +109,15 @@ header ul li a:hover {
   display: none;
 }
 
-header img {
-  height: 10vh;
+.navbar.sticky .sticky_logo {
+  display: block;
+  margin-left: 90px;
 }
 
 .navbar.sticky {
   background: white;
+  
+  transition: all 0.5s ease;
 }
 
 .navbar.sticky ul li a {
